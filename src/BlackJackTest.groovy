@@ -21,4 +21,14 @@ cards =[ new Card(Suit.clubs, 3, "Three"),
 
 point = game.calculateValue(cards);
 
-assert point==10 : "Error with 4th Ace";
+assert point == 20 : "4th Ace should be 1";
+
+cards =[ new Card(Suit.clubs, 3, "Three"),
+         new Card(Suit.clubs, 3, "Three"),
+         new Card(Suit.clubs, 7, "Nine"),
+         new Card(Suit.diamonds, 11, "Ace", true),
+];
+
+point = game.calculateValue(cards);
+
+assert point == 14 : "4th Ace should be 1";
