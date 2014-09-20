@@ -32,3 +32,5 @@ cards =[ new Card(Suit.clubs, 3, "Three"),
 point = game.calculateValue(cards);
 
 assert point == 14 : "4th Ace should be 1";
+
+assert 3+7 == 11 : "OMG! No math!!!!";
